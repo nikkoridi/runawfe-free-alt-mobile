@@ -2,7 +2,7 @@ GTK 3
 C:
 gcc -o runawfe_app main.c $(pkg-config --cflags --libs gtk+-3.0)
 C++:
-gcc -o runawfe_app main.cpp $(pkg-config --cflags --libs gtkmm-3.0 glibmm-2.68) -lstdc++
+gcc -o runawfe_app main_gtk3.cpp $(pkg-config --cflags --libs gtkmm-3.0 glibmm-2.68) -lstdc++
 
 GTK 4
 C:
