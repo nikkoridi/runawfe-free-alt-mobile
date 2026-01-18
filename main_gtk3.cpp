@@ -19,12 +19,12 @@ void open_url(const std::string& url) {
 string read_url_from_config() {
     string url = "";
     try {
-        Glib::RefPtr<Glib::KeyFile> key_file = Glib::KeyFile::create();
+        Glib::KeyFile key_file;
         string config_path = Glib::build_filename(Glib::get_user_config_dir(),
                                                   APP_ID,
                                                   "config.ini");
-        key_file->load_from_file(config_path);
-        url = key_file->get_string("Settings", "url");
+        key_file.load_from_file(config_path);
+        url = key_file.get_string("Settings", "url");
     }
     catch (const Glib::FileError& e) {
         cerr << "Failed to open config: " << endl << e.what() << endl;
