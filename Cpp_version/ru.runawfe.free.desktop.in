@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Runa WFE Free
+Icon=runawfefree_icon.png
+StartupNotify=true
+Exxec=@bindir@/runawfe_free_app

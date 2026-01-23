@@ -9,3 +9,9 @@ C:
 gcc -o runawfe_app main.c $(pkg-config --cflags --libs gtk4)
 C++:
 gcc -o runawfe_app main.cpp $(pkg-config --cflags --libs gtkmm-4.0 glibmm-2.68) -lstdc++
+
+Meson build:
+meson build
+ninja -C build
+cd ./build
+run ./runawfe_free
