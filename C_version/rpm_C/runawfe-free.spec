@@ -3,7 +3,7 @@ Version:        0.0.0.1
 Release:        alt0.1
 Summary:        RunaWFE app
 Group:          Other
-License:        GPL
+License:        LGPL-2.1
 Url:            https://github.com/processtech/runawfe-free-alt-mobile
 BuildArch:      noarch
 Source:        %{name}-%{version}.tar.gz
